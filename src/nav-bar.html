@@ -1,0 +1,19 @@
+<template bindable="router">
+
+  <nav role="navigation">
+
+    <ul class="fl-nav">
+      <li class="nav-logo">
+        <a href="#">BEN TEICHMAN</a>
+      </li>
+
+      <span class="nav-filler"></span>
+
+      <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+        <a href.bind="row.href">${row.title}</a>
+      </li>
+    </ul>
+
+  </nav>
+
+</template>
