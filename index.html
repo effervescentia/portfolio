@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <title>
-      <%- webpackConfig.metadata.title %>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="<%- webpackConfig.metadata.baseUrl %>">
-    <link rel="stylesheet" href="styles.css">
-    <!-- imported CSS are concatenated and added automatically -->
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ben Teichman - Enter</title>
+  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <div class="fl-splash">
-      <div class="fl-container">
-        <i class="fa fa-spinner fa-spin"></i>
-      </div>
-    </div>
-    <% if (webpackConfig.metadata.ENV === 'development') { %>
-    <!-- Webpack Dev Server reload -->
-    <script src="/webpack-dev-server.js"></script>
-    <% } %>
-  </body>
+<body class="no-cursor">
+  <nav id="navigation">
+    <a href="/facts">facts</a>
+  </nav>
+  <section id="app">
+    <button id="enter" name="enter"></button>
+    <span class="tracer tracer--cursor">
+      <svg width="210%" height="210%" viewBox="0 0 259 432">
+        <path d="M88.504,307.014l-88.504,79.675l0.295,-386.689l258.25,287.812l-119.084,-0.285l47.488,124.17l-50.957,19.488l-47.488,-124.171Z" />
+      </svg>
+    </span>
+    <span class="tracer tracer--x-y">
+      <svg width="210%" height="210%" viewBox="0 0 259 432">
+        <path d="M88.504,307.014l-88.504,79.675l0.295,-386.689l258.25,287.812l-119.084,-0.285l47.488,124.17l-50.957,19.488l-47.488,-124.171Z" />
+      </svg>
+    </span>
+    <span class="tracer tracer--x">
+      <svg width="210%" height="210%" viewBox="0 0 259 432">
+        <path d="M88.504,307.014l-88.504,79.675l0.295,-386.689l258.25,287.812l-119.084,-0.285l47.488,124.17l-50.957,19.488l-47.488,-124.171Z" />
+      </svg>
+    </span>
+    <span class="tracer tracer--y">
+      <svg width="210%" height="210%" viewBox="0 0 259 432">
+        <path d="M88.504,307.014l-88.504,79.675l0.295,-386.689l258.25,287.812l-119.084,-0.285l47.488,124.17l-50.957,19.488l-47.488,-124.171Z" />
+      </svg>
+    </span>
+  </section>
+</body>
+
+<script src="main.js"></script>
+
 </html>
