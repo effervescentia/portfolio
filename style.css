@@ -2,9 +2,21 @@
   --dot-diam: 10px;
 }
 
+.no-cursor {
+  cursor: none;
+}
+
+.v-centered {
+  align-items: center;
+}
+
 body {
   margin: 0;
-  cursor: none;
+  color: #efbb1c;
+}
+
+a {
+  color: #efbb1c;
 }
 
 section#app {
@@ -76,4 +88,17 @@ span.tracer {
 
 .dot::after {
   bottom: calc(50vh - 40px);
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  z-index: 1;
+}
+
+.main-text {
+  font-size: 2em;
+  font-family: sans-serif;
 }
